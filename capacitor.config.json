@@ -1,0 +1,14 @@
+{
+  "appId": "com.example.vuecapacitor",
+  "appName": "vuecapacitor",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {},
+  "linuxAndroidStudioPath": "/home/maxie/Apps/android-studio/bin/studio.sh"
+}

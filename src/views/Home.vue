@@ -13,16 +13,25 @@
         <a href="https://ionicframework.com/docs">Ionic Docs</a>!
       </p>
       <ion-button @click="toAboutPage" full>About</ion-button>
+      <ion-button @click="showDialogAlert" full>Alert!</ion-button>
     </ion-content>
   </ion-app>
 </template>
 
 <script>
+import { Plugins } from "@capacitor/core";
+
 export default {
   name: "Home",
   methods: {
     toAboutPage() {
       this.$router.push("about");
+    },
+    async showDialogAlert() {
+      await Plugins.Modals.alert({
+        title: "Alert",
+        message: "This is an example alert box"
+      });
     }
   }
 };
