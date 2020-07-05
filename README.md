@@ -20,6 +20,11 @@ npm run build
 npm run lint
 ```
 
+### Running the Android app
+```
+npm run android
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
