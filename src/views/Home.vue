@@ -1,18 +1,29 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <ion-app>
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Vue Capacitor</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content padding>
+      The world is over!
+      <p>
+        git lost at
+        <a href="https://ionicframework.com/docs">Ionic Docs</a>!
+      </p>
+      <ion-button @click="toAboutPage" full>About</ion-button>
+    </ion-content>
+  </ion-app>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
 export default {
   name: "Home",
-  components: {
-    HelloWorld
+  methods: {
+    toAboutPage() {
+      this.$router.push("about");
+    }
   }
 };
 </script>

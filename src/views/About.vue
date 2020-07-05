@@ -1,5 +1,25 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <ion-app>
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Vue Capacitor | About</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content padding>
+      This is the about page.
+      <ion-button @click="toHomePage" full>Home</ion-button>
+    </ion-content>
+  </ion-app>
 </template>
+
+<script>
+export default {
+  name: "About",
+  methods: {
+    toHomePage() {
+      this.$router.push("/");
+    }
+  }
+};
+</script>
