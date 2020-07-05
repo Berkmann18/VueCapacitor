@@ -22,3 +22,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## Credits
+This was made thanks to Ahmed's tutorial: https://medium.com/@smashingmag/building-mobile-apps-with-capacitor-and-vue-js-944b22ec4780
