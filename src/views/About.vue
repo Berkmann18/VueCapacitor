@@ -1,7 +1,7 @@
 <template>
   <ion-app>
     <ion-header>
-      <ion-toolbar color="primary">
+      <ion-toolbar color="secondary">
         <ion-title>Vue Capacitor | About</ion-title>
       </ion-toolbar>
     </ion-header>

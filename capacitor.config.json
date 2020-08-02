@@ -10,5 +10,5 @@
     }
   },
   "cordova": {},
-  "linuxAndroidStudioPath": "/home/maxie/Apps/android-studio/bin/studio.sh"
+  "linuxAndroidStudioPath": "/usr/bin/android-studio"
 }
