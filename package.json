@@ -6,7 +6,9 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "android": "npm run build && npx cap copy && npx cap open android"
+    "android": "npm run build && npx cap copy && npx cap open android",
+    "docker:build": "docker build -t berkmann18/vuecapacitor .",
+    "docker:run": "docker run -it -p 8080:80 --rm --name vuecapacitor-1 berkmann18/vuecapacitor"
   },
   "dependencies": {
     "@capacitor/android": "^2.2.1",
